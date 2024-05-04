@@ -1,0 +1,68 @@
+main {
+    font-family: 'International Super Hero Exp', sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px dashed brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-;
+    align-items: center;
+    height: auto;
+    text-align: start;
+    /* border: 1px solid white; */
+    margin: 40px;
+    /* animation: load 4s ease; */
+}
+
+.container:hover {
+    border: 1px solid sandybrown;
+}
+
+
+.imgContainer {
+    width: 200px;
+    height: 200px;
+}
+
+.imgContainer img {
+    width: inherit;
+    height: inherit;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+
+
+.detailcontainer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.name {
+    width: 90%;
+    margin: 10px;
+}
+
+
+
+.common {
+    width: 90%;
+    height: auto;
+
+    margin: 8px;
+    padding: 5px;
+}

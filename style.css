@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(169deg, #f64445 0%, #611cac 100%);;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(31, 31, 31, 0.80);
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    /* align-items: center; */
+    box-shadow: 10px 10px 50px 1px rgba(255, 255, 255, 1);
+    /* position: fixed;
+    top: 0; */
+}
+
+li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+li:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.nav-list {
+    width: 100%;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* margin: 50px 0; */
+}
+
+h1 {
+    word-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px rgba(55, 255, 29, 0.4);
+    padding: 0.2rem;
+    margin: 20px;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* margin-bottom: 10px; */
+}
+
+#search-bar input {
+    width: 80%;
+    height: 50px;
+    background-color: #2f1a1a;
+    opacity: 0.8;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    word-spacing: 1px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#search-bar input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.searching {
+    width: 70%;
+    text-align: center;
+    height: auto;
+}
+
+.result {
+    width: 60%;
+    height: auto;
+    /* background-color: #FF3CA; */
+    /* background-image: linear-gradient(225deg, #671543 0%, #402756 50%, #102b3f 100%); */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 2px 2px black; */
+}
+
+/* Searching */
+
+.search-info {
+    width: 95%;
+    /* margin: auto; */
+    height: 150px;
+    display: flex;
+    background: linear-gradient(to right, rgba(40, 40, 60, 1) 0%, rgba(40, 0, 60, 0) 90%);
+    margin: 5px;
+    padding: 5px;
+}
+
+.search-info:hover {
+    border: 1px solid sandybrown;
+}
+
+.img-container {
+    width: 35%;
+    height: 100%;
+    border: 1px solid white;
+    box-shadow: 1px 1px 50px 2px rgba(255, 255, 255, 0.5);
+}
+
+.img-container img {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.details-container {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: 'Sofia';
+}
+
+.favourite-button-container {
+    width: 85%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.favourite-button-container button {
+    width: 100%;
+    padding: 5px;
+    background-color: #474a76;
+    cursor: pointer;
+    border: 0.5px solid #FF3CAC;
+    border-radius: 15px;
+}
+
+.favourite-button-container button:hover {
+    background-color: rgb(236, 223, 223);
+    color: black;
+    box-shadow: 1px 1px 5px 1px rgb(31, 31, 31, 0.4);
+}
+
+.details-button-container {
+    width: 85%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.details-button-container button {
+    width: 100%;
+    padding: 5px;
+    background-color: #474a76;
+    cursor: pointer;
+    border: 0.5px solid #FF3CAC;
+    border-radius: 15px;
+}
+
+.details-button-container button:hover {
+    background-color: rgb(236, 223, 223);
+    color: black;
+    box-shadow: 1px 1px 5px 1px rgb(31, 31, 31, 0.4);
+}
+
+/* some Responsiveness... */
+
+@media screen and (max-width:768px) {
+    #title {
+        text-align: center;
+    }
+
+    #search-bar {
+        width: 95%;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .navbar .nav-list {
+        margin: 10px 10px;
+        justify-content: space-around;
+    }
+}
